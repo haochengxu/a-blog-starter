@@ -3,10 +3,7 @@
  */
 const nextConfig = {
     output: 'export',
-    images: {
-        loader: 'custom',
-        loaderFile: './image-loader.ts',
-    },
+    images: { unoptimized: true }
    
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
     // trailingSlash: true,
