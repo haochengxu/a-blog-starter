@@ -1,3 +1,5 @@
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function imageLoader({
     src,
     width,
@@ -7,5 +9,5 @@ export default function imageLoader({
     width: number
     quality?: number
   }) {
-    return src
+    return `${prefix}${src}`
   }
