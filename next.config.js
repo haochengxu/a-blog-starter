@@ -4,7 +4,8 @@
 const nextConfig = {
     output: 'export',
     images: {
-        unoptimized: true
+        unoptimized: true,
+        basePath: '',
     }
    
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
