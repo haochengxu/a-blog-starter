@@ -7,6 +7,5 @@ export default function imageLoader({
     width: number
     quality?: number
   }) {
-    // const params = ['f_auto', 'c_limit', `w_${width}`, `q_${quality || 'auto'}`]
-    return src.substring(1)
+    return src
   }
