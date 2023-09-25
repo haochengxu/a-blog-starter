@@ -4,7 +4,7 @@ const indexStyle = {
   backgroundImage: "url('/assets/photo/AK9A0963.JPG')",
   height: '100vh',
   width: '100vw',
-  position: 'relative',
+  position: 'relative' as 'relative',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
 }
