@@ -1,7 +1,9 @@
 import Link from 'next/link'
 
+let max = 3, min = 1;
+
 const indexStyle = {
-  backgroundImage: "url('/assets/photo/AK9A0963.JPG')",
+  backgroundImage: `url('/assets/photo/${Math.floor(Math.random() * (max - min + 1) + min)}.JPG')`,
   height: '100vh',
   width: '100vw',
   position: 'relative' as 'relative',
