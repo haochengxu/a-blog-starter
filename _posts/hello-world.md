@@ -1,19 +1,23 @@
 ---
-title: 'Learn How to Pre-render Pages Using Static Generation with Next.js'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: '/assets/blog/hello-world/cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
+title: '赛博朋克2077'
+excerpt: '欢迎来到夜之城'
+coverImage: '/assets/blog/cyberpunk2077/cover.jpeg'
+date: '2020-12-16T19:01:07.322Z'
 author:
-  name: Tim Neutkens
-  picture: '/assets/blog/authors/tim.jpeg'
+  name: Haocheng
+  picture: '/assets/blog/authors/flying-boat.jpeg'
 ogImage:
-  url: '/assets/blog/hello-world/cover.jpg'
+  url: '/assets/blog/cyberpunk2077/cover.jpeg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+玩了58.9小时后，我的赛博朋克2077通关了。我特意对比了一下我在只狼的游戏时间——61.4小时。两者总时间相差不大，但是只狼我是一年前开始玩的，断断续续一直在玩，并且还没有通关。与之相比，赛博朋克我是在首发的二十天内就通关了。
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+有一个原因是现在的精力更足了，更能沉浸游戏，享受其中。另外还有一个游戏的原因，只狼太难。
 
-## Lorem Ipsum
+从我个人的感觉来说，玩赛博朋克非常流畅，很多时候不知不觉就沉浸在夜之城里，那迷人的赛博朋克气息让人忍不住继续探索，另外任务设计非常合理，即使很多支线任务都觉得用心十足。
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+赛博朋克号称是开放式游戏，但是开放式是架子，核心还是RPG。对于RPG来说，最核心的成功标志是调动玩家的感情，我觉得赛博朋克2077做到了。
+
+游戏被称作第九艺术，超强的带入感是其他艺术手段无法比拟的。在我玩了这么久游戏后，已经不自觉得将游戏里的v视作自己的化身，这和我在游戏里的一系列选择密不可分。同时，V在游戏里的朋友，恋人，哥们，以及和另一个重要人物银手的感情，也让我难以自拔。
+
+赛博朋克2077的故事背景是在未来，那时科技发达，人类已经可以随意改造自己的身体，甚至复制自己的思想。地点是在夜之城，一座既有掌握巨大财富的豪富，又有如蝼蚁般生活的底层的城市。在这种环境下，通过游戏我体会到了人最宝贵的可能就是不屈的精神，人最值得珍藏的是与所爱之人之间的感情。这是再发达的科技，再恶劣的环境都无法改变的。

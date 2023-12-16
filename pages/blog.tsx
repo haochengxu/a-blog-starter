@@ -20,7 +20,7 @@ export default function Blog({ allPosts }: Props) {
       <>
         <Layout>
           <Head>
-            <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
+            <title>{`Haocheng's personal blog`}</title>
           </Head>
           <Container>
             <Intro />
