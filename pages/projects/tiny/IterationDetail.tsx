@@ -94,7 +94,7 @@ const IterationDetail: React.FC<Props> = ({
                 <button
                   className="bg-blue-500 text-white px-4 py-2 rounded"
                   onClick={() => {
-                    if (startTime != null) return;
+                    if (startTime != '') return;
                     setStartTime(new Date().toISOString());
                     startTimer();
                   }}
