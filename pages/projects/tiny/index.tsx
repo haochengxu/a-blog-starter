@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Project } from "./types";
+import { Project } from "../../../@types/projects/types";
 import IterationDetail from "./IterationDetail";
 
 const IterationTracker: React.FC = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Project } from "./types";
+import { Project } from "../../../@types/projects/types";
 
 interface Props {
   // Define the props for your component here
