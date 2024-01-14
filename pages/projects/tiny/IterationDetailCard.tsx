@@ -59,7 +59,7 @@ const IterationDetailCard: React.FC<Props> = ({
           <input
             className="border-2 border-gray-300 p-2 rounded-md text-sm"
             type="datetime-local"
-            value={editedIteration.startTime.slice(0, 16)}
+            value={editedIteration.startTime ? editedIteration.startTime.slice(0, 16) : ''}
             onChange={(e) =>
               setEditedIteration({
                 ...editedIteration,
