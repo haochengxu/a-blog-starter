@@ -56,17 +56,19 @@ const IterationDetailCard: React.FC<Props> = ({
       {isEditing ? (
         <div className="flex flex-col space-y-4">
           <label className="font-bold text-sm text-gray-600">开始时间</label>
-          <input
-            className="border-2 border-gray-300 p-2 rounded-md text-sm"
-            type="datetime-local"
-            value={editedIteration.startTime ? editedIteration.startTime.slice(0, 16) : ''}
-            onChange={(e) =>
-              setEditedIteration({
-                ...editedIteration,
-                startTime: e.target.value,
-              })
-            }
-          />
+          {editedIteration && (
+            <input
+              className="border-2 border-gray-300 p-2 rounded-md text-sm"
+              type="datetime-local"
+              value={editedIteration.startTime.slice(0, 16)}
+              onChange={(e) =>
+                setEditedIteration({
+                  ...editedIteration,
+                  startTime: e.target.value,
+                })
+              }
+            />
+          )}
           <label className="font-bold text-sm text-gray-600">持续时间</label>
           <div className="flex items-center space-x-2">
             <input
