@@ -4,8 +4,8 @@ export interface Iteration {
   quality: number;
   notes: string;
   tags: String[];
-  startTime?: string;
-  endTime?: Date;
+  startTime: string;
+  endTime: Date;
 }
 
 export interface Project {
