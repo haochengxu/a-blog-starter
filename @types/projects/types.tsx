@@ -5,7 +5,7 @@ export interface Iteration {
   notes: string;
   tags: String[];
   startTime: string;
-  endTime: Date;
+  endTime?: Date;
 }
 
 export interface Project {
