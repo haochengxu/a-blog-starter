@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Project } from "../../../@types/projects/types";
+import IterationDetailCard from "./IterationDetailCard";
+import { add } from "date-fns";
 
 interface Props {
   // Define the props for your component here
@@ -7,7 +9,7 @@ interface Props {
   updateProject: (project: Project) => void;
 }
 
-const IterationDetail: React.FC<Props> = ({
+const IterationList: React.FC<Props> = ({
   project: currentProject,
   updateProject,
 }) => {
@@ -40,11 +42,12 @@ const IterationDetail: React.FC<Props> = ({
     setTimerId(null);
   };
 
-  const submitIteration = () => {
+  const addIteration = () => {
     if (!window.confirm(`你确定要完成这次${currentProject.name}吗？`)) {
       return;
     }
     const newIteration = {
+      index: currentProject.iterations ? currentProject.iterations.length : 0,
       startTime: startTime,
       elapsedTime: elapsedTime,
       notes: notes,
@@ -53,6 +56,18 @@ const IterationDetail: React.FC<Props> = ({
     };
 
     currentProject.iterations = currentProject.iterations ? [...currentProject.iterations, newIteration] : [newIteration];
+    updateProject(Object.assign({}, currentProject));
+    pauseTimer();
+    setShowPanel(false);
+    setStartTime('');
+  };
+
+  const modifyIteration = (iteration) => {
+    if (!window.confirm(`你确定要修改这次${currentProject.name}吗？`)) {
+      return;
+    }
+    currentProject.iterations[iteration.index] = iteration;
+    console.log(currentProject);
     updateProject(Object.assign({}, currentProject));
   };
 
@@ -143,7 +158,7 @@ const IterationDetail: React.FC<Props> = ({
                 </p>
                 <button
                   className="mt-5 bg-green-500 text-white px-4 py-2 rounded"
-                  onClick={submitIteration}
+                  onClick={addIteration}
                 >
                   完成一次{currentProject.name}
                 </button>
@@ -154,35 +169,16 @@ const IterationDetail: React.FC<Props> = ({
               </div>
             </div>
           )}
-          {currentProject.iterations &&
-            currentProject.iterations.map((iteration, index) => {
-              return (
-                <div
-                  key={index}
-                  className="bg-white p-4 shadow rounded mt-5 border-gray-400"
-                >
-                  <p className="text-lg font-bold text-blue-600">
-                    第{index + 1}次{currentProject.name}
-                  </p>
-                  <p className="text-zinc-500">
-                    开始时间:{" "}
-                    {iteration.startTime
-                      ? `${new Date(iteration.startTime).toLocaleDateString()} ${new Date(iteration.startTime).toLocaleTimeString()}`
-                      : "未知"}
-                  </p>
-                  <p className="text-zinc-500">
-                    持续时间: {Math.floor(iteration.elapsedTime / 3600)} 小时{" "}
-                    {Math.floor((iteration.elapsedTime % 3600) / 60)} 分钟
-                  </p>
-                  <p className="text-zinc-500">评价: {iteration.quality}星</p>
-                  <p className="text-zinc-500">小记: {iteration.notes}</p>
-                </div>
-              );
-            })}
+          {
+            currentProject.iterations && currentProject.iterations.map((iteration, index) => {
+              return <IterationDetailCard updateIteration={ modifyIteration }
+                key={index} iteration={iteration} index={index} name={currentProject.name} />
+            })
+          }
         </>
       ) : null}
     </div>
   );
 };
 
-export default IterationDetail;
+export default IterationList;

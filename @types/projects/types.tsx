@@ -1,4 +1,5 @@
 export interface Iteration {
+  index: number;
   elapsedTime: number;
   quality: number;
   notes: string;

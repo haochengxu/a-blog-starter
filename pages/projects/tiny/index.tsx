@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Project } from "../../../@types/projects/types";
-import IterationDetail from "./IterationDetail";
+import IterationList from "./IterationList";
 
 const IterationTracker: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -78,10 +78,10 @@ const IterationTracker: React.FC = () => {
         </div>
 
         <div className="project-detail flex-1 ml-20 min-w-[300px]">
-          <IterationDetail
+          <IterationList
             project={currentProject}
             updateProject={updateProject}
-          ></IterationDetail>
+          ></IterationList>
         </div>
       </div>
     </div>
